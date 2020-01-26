@@ -3,10 +3,7 @@ import Link from 'next/link';
 const Home = (props) => {
 	return (
 		<div>
-			<p>Home</p>
-			<Link href="/sell">
-				<a>Sell</a>
-			</Link>
+			<p>Hey!</p>
 		</div>
 	);
 };
