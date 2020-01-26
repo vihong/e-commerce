@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Home = (props) => {
 	return (
 		<div>
-			<p>Hey!</p>
+			<p>Home</p>
 		</div>
 	);
 };

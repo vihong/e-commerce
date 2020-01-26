@@ -26,6 +26,35 @@ const Inner = styled.div`
 	padding: 2rem;
 `;
 
+injectGlobal`
+    @font-face {
+        font-family: 'Lato', sans-serif;
+        src: url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+        format: ('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    html{
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    *, *:before, *:after{
+        box-sizing: inherit;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+        line-height:2;
+        font-family: 'Lato', sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: ${themeOuiCar.black};
+    }
+`;
+
 class Page extends Component {
 	render() {
 		return (
