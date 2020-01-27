@@ -21,7 +21,7 @@ const Header = () => {
 			<div className="bar">
 				<Logo>
 					<Link href="/">
-						<a>YesCar</a>
+						<a>OuiCar+</a>
 					</Link>
 				</Logo>
 				<Nav />
