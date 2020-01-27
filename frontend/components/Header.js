@@ -27,9 +27,9 @@ const Header = () => {
 				<Nav />
 			</div>
 			<div className="sub-bar">
-				<p>Search</p>
+				<p>Recherche</p>
 			</div>
-			<div>Cart</div>
+			<div>Panier</div>
 		</StyledHeader>
 	);
 };

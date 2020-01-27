@@ -5,19 +5,19 @@ const Nav = (props) => {
 	return (
 		<NavStyles>
 			<Link href="/items">
-				<a>Shop</a>
+				<a>Boutique en ligne</a>
 			</Link>
 			<Link href="/sell">
-				<a>Sell</a>
+				<a>Vendre</a>
 			</Link>
 			<Link href="/signup">
-				<a>Signup</a>
+				<a>S'inscire</a>
 			</Link>
 			<Link href="/orders">
-				<a>Orders</a>
+				<a>Votre commande</a>
 			</Link>
 			<Link href="/me">
-				<a>Account</a>
+				<a>Votre compte</a>
 			</Link>
 		</NavStyles>
 	);

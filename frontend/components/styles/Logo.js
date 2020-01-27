@@ -12,6 +12,8 @@ const Logo = styled.h1`
 		color: white;
 		text-transform: uppercase;
 		text-decoration: none;
+		font-family: 'Nunito', sans-serif;
+		font-weight: 800;
 	}
 	@media (max-width: 1300px) {
 		margin: 0;
