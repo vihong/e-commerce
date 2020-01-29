@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import CreateItemForm from '../components/CreateItemForm';
 
 const Sell = () => {
 	return (
 		<div>
-			<p>Sell</p>
+			<CreateItemForm />
 		</div>
 	);
 };
