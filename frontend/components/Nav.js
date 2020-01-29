@@ -5,7 +5,7 @@ const Nav = (props) => {
 	return (
 		<NavStyles>
 			<Link href="/items">
-				<a>Boutique en ligne</a>
+				<a>Articles</a>
 			</Link>
 			<Link href="/sell">
 				<a>Vendre</a>

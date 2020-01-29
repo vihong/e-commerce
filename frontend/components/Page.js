@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+import PageContainerStyles from './styles/PageContainerStyles';
 
 const themeOuiCar = {
 	red         : '#FF0000',
@@ -17,12 +18,6 @@ const themeOuiCar = {
 const StyledPage = styled.div`
 	background: white;
 	color: ${(props) => props.theme.black};
-`;
-
-const PageContainer = styled.div`
-	max-width: ${(props) => props.theme.maxWidth};
-	margin: 0 auto;
-	padding: 2rem;
 `;
 
 injectGlobal`
@@ -61,7 +56,9 @@ class Page extends Component {
 				<StyledPage>
 					<Meta />
 					<Header />
-					<PageContainer>{this.props.children}</PageContainer>
+					<PageContainerStyles>
+						{this.props.children}
+					</PageContainerStyles>
 				</StyledPage>
 			</ThemeProvider>
 		);
