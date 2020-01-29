@@ -5,6 +5,7 @@ import Title from './styles/Title';
 import ItemStyles from './styles/ItemStyles';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
+import styled from 'styled-components';
 
 class Item extends Component {
 	static propTypes = {
@@ -20,7 +21,7 @@ class Item extends Component {
 					<Link
 						href={{
 							pathname : '/item',
-							query    : { id: item.id }
+							query    : { id: item.id } // add librairies later to custom the query for better SEO
 						}}
 					>
 						<a>{item.title}</a>

@@ -4,8 +4,6 @@ import gql from 'graphql-tag';
 import styled from 'styled-components';
 import Item from './Item';
 
-//fetch and loop over the item
-
 const ALL_ITEMS_QUERY = gql`
 	query ALL_ITEMS_QUERY {
 		items {
@@ -18,10 +16,11 @@ const ALL_ITEMS_QUERY = gql`
 		}
 	}
 `;
+// We use "Render props" to us the query response
 
-const Center = styled.section`text-align: center;`;
+const SectionStyles = styled.section`text-align: center;`; // that'll do for now but this needs to be changed
 
-const ItemsList = styled.div`
+const ItemsStyles = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 60px;
@@ -30,24 +29,24 @@ const ItemsList = styled.div`
 `;
 
 class Items extends Component {
+	displayItemsFromQuery = (data, loading, error) => {
+		if (loading) return <p>Chargement...</p>;
+		if (error) return <p>Error: {error.message}</p>;
+		return (
+			<ItemsStyles>
+				{data.items.map((item) => <Item item={item} key={item.id} />)}
+			</ItemsStyles>
+		);
+	};
+
 	render() {
 		return (
-			<Center>
+			<SectionStyles>
 				<Query query={ALL_ITEMS_QUERY}>
-					{({ data, loading, error }) => {
-						console.log(data);
-						if (loading) return <p>Chargement...</p>;
-						if (error) return <p>Error: {error.message}</p>;
-						return (
-							<ItemsList>
-								{data.items.map((item) => (
-									<Item item={item} key={item.id} />
-								))}
-							</ItemsList>
-						);
-					}}
+					{({ data, loading, error }) =>
+						this.displayItemsFromQuery(data, loading, error)}
 				</Query>
-			</Center>
+			</SectionStyles>
 		);
 	}
 }
