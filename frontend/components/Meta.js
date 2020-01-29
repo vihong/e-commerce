@@ -10,14 +10,14 @@ const Meta = (props) => {
 			<meta charSet="utf-8" />
 			<link
 				rel="shortcut icon"
-				href="https://www.ouicar.fr/img/_logos/favicon-114.png"
+				href="https://www.ouicar.fr/img/_logos/logo-ouicar-250.png"
 			/>
 			<link
 				rel="stylesheet"
 				type="text/css"
 				href="/static/nprogress.css"
 			/>
-			<title>YesCar!</title>
+			<title>OuiCar+ : plus qu'une voiture, une expérience</title>
 		</Head>
 	);
 };
