@@ -31,11 +31,11 @@ class CreateItemForm extends Component {
 	imageRef = React.createRef();
 
 	state = {
-		title       : 'Peluche Mélofée',
-		description : 'Cette peluche porte chance',
+		title       : '',
+		description : '',
 		image       : '',
 		largeImage  : '',
-		price       : 1500
+		price       : 0
 	};
 
 	handleChange = (event) => {
@@ -75,7 +75,7 @@ class CreateItemForm extends Component {
 									type="text"
 									id="file"
 									name="image"
-									placeholder="Téléchargez une image..."
+									placeholder="URL directe d'une image..."
 									required
 									onChange={this.uploadFile}
 									ref={this.imageRef}
@@ -103,7 +103,7 @@ class CreateItemForm extends Component {
 							</label>
 
 							<label htmlFor="price">
-								Prix
+								Prix (ex: tapez '1500' pour 15€)
 								<input
 									type="number"
 									id="price"
