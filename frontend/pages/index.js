@@ -12,12 +12,26 @@ const SloganStyles = styled.h1`
 	}
 `;
 
+const CallToActionStyles = styled.p`
+	background: ${(props) => props.theme.greenOuiCar};
+	display: inline-block;
+	color: white;
+	padding: 0.8rem 2rem;
+	transform: rotate(-3deg);
+	position: relative;
+	bottom: 2rem;
+`;
+
 const Home = (props) => {
 	return (
 		<div>
 			<SloganStyles>
 				Avec OUICAR+,<br />
-				<span>faites plus que louer une voiture,</span> savourez-la.
+				<span>faites plus que louer une voiture</span>
+				<br />
+				<CallToActionStyles>
+					... améliorez l'expérience !
+				</CallToActionStyles>
 			</SloganStyles>
 			<Items />
 		</div>
