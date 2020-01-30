@@ -28,6 +28,8 @@ const CREATE_ITEM_MUTATION = gql`
 `;
 
 class CreateItemForm extends Component {
+	imageRef = React.createRef();
+
 	state = {
 		title       : 'Peluche Mélofée',
 		description : 'Cette peluche porte chance',
@@ -42,24 +44,12 @@ class CreateItemForm extends Component {
 		this.setState({ [name]: valueInput }); // computed value property
 	};
 
-	uploadFile = async (event) => {
+	uploadFile = () => {
 		console.log('uploading file...');
-		const files = event.currentTarget.files;
-		console.log(files);
-		const data = new FormData();
-		data.append('file', files[0]);
-		data.append('upload_preset', 'onlineShopCloudinary');
-
-		const response = await fetch(
-			'https://api.cloudinary.com/v1_1/dirwtg5hx/image/upload',
-			{ method: 'POST', body: data }
-		);
-		const file = await response.json();
-		console.log(`----------`);
-		console.log(file);
+		console.log(this.imageRef.current.value);
 		this.setState({
-			image      : file.secure_url,
-			largeImage : file.eager[0].secure_url
+			image      : this.imageRef.current.value,
+			largeImage : this.imageRef.current.value
 		});
 	};
 	render() {
@@ -79,15 +69,16 @@ class CreateItemForm extends Component {
 					>
 						<ErrorMessage error={error} />
 						<fieldset disabled={loading} aria-busy={loading}>
-							<label htmlFor="file">
+							<label htmlFor="image">
 								File
 								<input
-									type="file"
+									type="text"
 									id="file"
-									name="file"
+									name="image"
 									placeholder="Téléchargez une image..."
 									required
 									onChange={this.uploadFile}
+									ref={this.imageRef}
 								/>
 								{this.state.image ? (
 									<img
