@@ -16,8 +16,8 @@ const Home = (props) => {
 	return (
 		<div>
 			<SloganStyles>
-				Avec OUICAR+, <br />
-				<span>faites plus que Louer une voiture,</span> savourez la.
+				Avec OUICAR+,<br />
+				<span>faites plus que louer une voiture,</span> savourez-la.
 			</SloganStyles>
 			<Items />
 		</div>
