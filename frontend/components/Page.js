@@ -20,6 +20,43 @@ const StyledPage = styled.div`
 	color: ${(props) => props.theme.black};
 `;
 
+const BackgroundDivStyles = styled.div`
+	background-image: url(https://images.pexels.com/photos/769892/pexels-photo-769892.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-end;
+	position: relative;
+	bottom: 10px;
+`;
+
+const SloganStyles = styled.h1`
+	margin-right: auto;
+	margin-top: auto;
+	padding-left: 3rem;
+	position: relative;
+	bottom: 15rem;
+	text-align: center;
+	color: ${(props) => props.theme.greenOuiCar};
+	line-height: 150%;
+	span {
+		color: snow;
+	}
+`;
+
+const CallToActionStyles = styled.p`
+	background: ${(props) => props.theme.greenOuiCar};
+	display: inline-block;
+	color: white;
+	padding: 0.8rem 2rem;
+	transform: rotate(-3deg);
+	position: relative;
+	bottom: 2rem;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+`;
+
 injectGlobal`
     @font-face {
         font-family: 'Lato', sans-serif;
@@ -56,6 +93,16 @@ class Page extends Component {
 				<StyledPage>
 					<Meta />
 					<Header />
+					<BackgroundDivStyles>
+						<SloganStyles>
+							Avec OUICAR+,<br />
+							<span>faites plus que louer une voiture</span>
+							<br />
+							<CallToActionStyles>
+								... améliorez l'expérience !
+							</CallToActionStyles>
+						</SloganStyles>
+					</BackgroundDivStyles>
 					<PageContainerStyles>
 						{this.props.children}
 					</PageContainerStyles>
