@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import NavStyles from './styles/NavStyles';
+import styled from 'styled-components';
+
+const GreyLink = styled.a`color: lightgrey;`;
 
 const Nav = (props) => {
 	return (
@@ -11,13 +14,13 @@ const Nav = (props) => {
 				<a>Vendre</a>
 			</Link>
 			<Link href="/signup">
-				<a>S'inscrire</a>
+				<GreyLink>S'inscrire</GreyLink>
 			</Link>
 			<Link href="/orders">
-				<a>Votre commande</a>
+				<GreyLink>Votre commande</GreyLink>
 			</Link>
 			<Link href="/me">
-				<a>Votre compte</a>
+				<GreyLink>Votre compte</GreyLink>
 			</Link>
 		</NavStyles>
 	);

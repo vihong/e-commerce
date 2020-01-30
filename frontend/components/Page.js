@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link';
 import Header from './Header';
 import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
@@ -55,6 +56,18 @@ const CallToActionStyles = styled.p`
 	position: relative;
 	bottom: 2rem;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+`;
+
+const ButtonStyle = styled.a`
+	width: auto;
+	background: ${(props) => props.theme.greenOuiCar};
+	color: white;
+	border: 0;
+	font-size: 1.7rem;
+	font-weight: 600;
+	padding: 0.2rem 1.5rem;
+	border-radius: 5px;
+	display: inline-block;
 `;
 
 injectGlobal`
