@@ -39,12 +39,13 @@ const FormStyles = styled.form`
 	button,
 	input[type='submit'] {
 		width: auto;
-		background: red;
+		background: ${(props) => props.theme.greenOuiCar};
 		color: white;
 		border: 0;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		font-weight: 600;
-		padding: 0.5rem 1.2rem;
+		padding: 0.8rem 1.5rem;
+		border-radius: 5px;
 	}
 	fieldset {
 		border: 0;

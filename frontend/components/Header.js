@@ -26,10 +26,8 @@ const Header = () => {
 				</Logo>
 				<Nav />
 			</div>
-			<div className="sub-bar">
-				<p>Recherche</p>
-			</div>
-			<div>Panier</div>
+			<div className="sub-bar">{/* <p>Recherche</p> */}</div>
+			{/* <div>Panier</div> */}
 		</StyledHeader>
 	);
 };

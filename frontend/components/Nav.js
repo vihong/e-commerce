@@ -11,7 +11,7 @@ const Nav = (props) => {
 				<a>Vendre</a>
 			</Link>
 			<Link href="/signup">
-				<a>S'inscire</a>
+				<a>S'inscrire</a>
 			</Link>
 			<Link href="/orders">
 				<a>Votre commande</a>
