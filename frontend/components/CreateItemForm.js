@@ -128,9 +128,7 @@ class CreateItemForm extends Component {
 								/>
 							</label>
 
-							<button type="submit" disabled="true">
-								Ajouter +
-							</button>
+							<button type="submit">Ajouter +</button>
 						</fieldset>
 					</FormStyles>
 				)}
