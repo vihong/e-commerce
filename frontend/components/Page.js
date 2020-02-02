@@ -106,16 +106,6 @@ class Page extends Component {
 				<StyledPage>
 					<Meta />
 					<Header />
-					<BackgroundDivStyles>
-						<SloganStyles>
-							Avec OUICAR+,<br />
-							<span>faites plus que louer une voiture</span>
-							<br />
-							<CallToActionStyles>
-								... améliorez l'expérience !
-							</CallToActionStyles>
-						</SloganStyles>
-					</BackgroundDivStyles>
 					<PageContainerStyles>
 						{this.props.children}
 					</PageContainerStyles>
