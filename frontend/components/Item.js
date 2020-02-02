@@ -6,6 +6,7 @@ import ItemStyles from './styles/ItemStyles';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
 import styled from 'styled-components';
+import DeleteItem from './DeleteItem';
 
 class Item extends Component {
 	static propTypes = {
@@ -39,7 +40,9 @@ class Item extends Component {
 						<a>Modifier quantité &#9997;</a>
 					</Link>
 					<button>Ajouter au panier &#128722;</button>
-					<button>Retirer du panier &#10060;</button>
+					<DeleteItem id={item.id}>
+						Supprimer du panier &#10060;
+					</DeleteItem>
 				</div>
 			</ItemStyles>
 		);
