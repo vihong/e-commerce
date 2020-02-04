@@ -10,7 +10,7 @@ const Item = styled.div`
 	margin-top: 3rem;
 	img {
 		width: 50%;
-		height: 200px;
+		height: 250px;
 		object-fit: cover;
 	}
 	p {
@@ -18,7 +18,7 @@ const Item = styled.div`
 		font-weight: 300;
 		flex-grow: 1;
 		padding: 0 3rem;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.buttonList {
 		display: grid;
