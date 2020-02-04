@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const CartTitleStyles = styled.h3`
-	background: ${(props) => props.theme.red};
+	background: ${(props) => props.theme.greenOuiCar};
 	color: white;
 	display: inline-block;
 	padding: 4px 5px;

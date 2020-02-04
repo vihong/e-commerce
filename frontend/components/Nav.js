@@ -29,7 +29,7 @@ const Nav = (props) => {
 			</Link>
 			<Mutation mutation={TOGGLE_CART_MUTATION}>
 				{(toggleCart) => (
-					<button onClick={toggleCart}>Mon Panier &#128722;</button>
+					<button onClick={toggleCart}>Mon panier &#128722;</button>
 				)}
 			</Mutation>
 		</NavStyles>

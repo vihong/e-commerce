@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const CheckoutButton = styled.button`
-	background: red;
+	background: ${(props) => props.theme.greenOuiCar};
 	color: white;
 	font-weight: 500;
 	border: 0;
