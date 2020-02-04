@@ -32,7 +32,7 @@ const Cart = () => (
 								<CartTitleStyles>
 									Votre commande
 								</CartTitleStyles>
-								<p>10 articles dans votre commandes.</p>
+								<p>10 articles dans votre commande.</p>
 							</header>
 
 							<footer>

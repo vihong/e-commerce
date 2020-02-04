@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Header from './Header';
 import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import PageContainerStyles from './styles/PageContainerStyles';
 
 const themeOuiCar = {
 	red         : '#FF0000',
@@ -19,6 +18,12 @@ const themeOuiCar = {
 const StyledPage = styled.div`
 	background: white;
 	color: ${(props) => props.theme.black};
+`;
+
+const PageContainerStyles = styled.div`
+	/* max-width: ${(props) => props.theme.maxWidth}; */
+	margin: 0 auto;
+	/* padding: 2rem; */
 `;
 
 const BackgroundDivStyles = styled.div`
