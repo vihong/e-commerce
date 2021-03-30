@@ -1,10 +1,9 @@
 # 🚀 OUI CAR
 
 <p>Web app inspired from French web app OuiCar "OuiCar".</p>
-  <p>👉 Check out the demo <a href="https://oui-car-frontend.herokuapp.com/">right here<a></p>
-  <p>OuiCar+ allows you to go the extra mile and not only rent cars but also accessories to enhance your "driver experience."
+<p>OuiCar+ allows you to go the extra mile and not only rent cars but also accessories to enhance your "driver experience."
 Add a GPS, car fresheners and mini board games to make sure to enjoy your ride to the fullest!</p>
-
+<p>👉 Check out the demo <a href="https://oui-car-frontend.herokuapp.com/">right here<a></p>
 
 
 
