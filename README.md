@@ -15,8 +15,9 @@ Add a GPS, car fresheners and mini board games to make sure to enjoy your ride t
 </ul>
 
 
+<a href="https://oui-car-frontend.herokuapp.com/">![alt text](https://raw.githubusercontent.com/vihong/vihong/main/ouiCarPreview.png)<a>
 
-![alt text](https://raw.githubusercontent.com/vihong/vihong/main/ouiCarPreview.png)
+
 
 TO START THE APP : 
 <ul><li>frontend : $ npm run start</li>
