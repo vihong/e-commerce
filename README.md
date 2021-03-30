@@ -13,7 +13,7 @@ Add a GPS, car fresheners and mini board games to make sure to enjoy your ride t
 
 
 
-![alt text](https://raw.githubusercontent.com/vihong/vihong/main/previewGentedMobilesOnly.png)
+![alt text](https://raw.githubusercontent.com/vihong/vihong/main/ouiCarPreview.png)
 
 TO START THE APP : 
 <ul><li>frontend : $ npm run start</li>
