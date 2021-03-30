@@ -20,6 +20,7 @@ Add a GPS, car fresheners and mini board games to make sure to enjoy your ride t
 
 
 TO START THE APP : 
-<ul><li>frontend : $ npm run dev</li>
-
-<li>backend : $ node run dev</li>
+<ul>
+  <li>frontend : $ npm run dev</li>
+  <li>backend : $ npm run dev</li>
+</ul>
